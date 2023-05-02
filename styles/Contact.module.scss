@@ -1,0 +1,93 @@
+.app__contact {
+  padding: 2rem 0;
+  width: 80%;
+  max-width: 45rem;
+  margin: auto;
+  text-align: center;
+
+  form {
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 1rem;
+    .app__contact-input {
+      gap: 1rem;
+      width: 100%;
+      input {
+        width: 33%;
+        padding: 8px;
+        background-color: rgba(255, 255, 255, 0);
+        border: 1px solid black;
+        outline: none;
+        font-family: inherit;
+        font-size: 15px;
+
+        &:focus {
+          background-color: rgba(219, 240, 255, 0.638);
+        }
+      }
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        width: 90%;
+        min-width: 20rem;
+        input {
+          width: 100%;
+        }
+      }
+    }
+    textarea {
+      width: 100%;
+      resize: none;
+      background-color: rgba(255, 255, 255, 0);
+      border: 1px solid black;
+      outline: none;
+      font-family: inherit;
+      font-size: 15px;
+      padding: 8px;
+
+      &:focus {
+        background-color: rgba(219, 240, 255, 0.638);
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 90%;
+        min-width: 20rem;
+      }
+    }
+
+    .app__contact-btn {
+      padding: 8px 26px;
+      font-family: inherit;
+      background-color: black;
+      color: white;
+      font-weight: 500;
+      font-size: 15px;
+      margin: 1rem;
+      cursor: pointer;
+    }
+  }
+
+  .app__contact-info {
+    width: 100%;
+    padding: 4rem 0;
+
+    div {
+      width: 33%;
+
+      h4 {
+        font-weight: 500;
+      }
+
+      p {
+        padding: 0.8rem 0;
+        font-weight: 300;
+      }
+    }
+
+    @media screen and (max-width: 670px) {
+      flex-direction: column;
+      div {
+        width: 100%;
+      }
+    }
+  }
+}

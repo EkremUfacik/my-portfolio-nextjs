@@ -1,0 +1,42 @@
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  width: 32px;
+  height: 18px;
+  background-color: white;
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px;
+  position: relative;
+  transform: scale(1.5);
+
+  .dark {
+    color: rgba(153, 153, 153, 0.905);
+    font-size: 12px;
+  }
+
+  .sun {
+    color: yellow;
+    font-size: 12px;
+  }
+  .ball {
+    width: 13px;
+    height: 13px;
+    background-color: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+}
+.checkbox:checked + .label .ball {
+  transform: translateX(14px);
+}
+
+/*  target the elemenent after the label*/
