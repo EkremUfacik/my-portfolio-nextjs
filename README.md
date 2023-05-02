@@ -9,7 +9,9 @@
 - EmailJs
 
 ## Link
+
 - https://ekremufacik.netlify.app/
 
 ## Screenshot
-<img src="public/images/portfolio.png" alt="user" style="zoom: 200%;" />
+
+<img src="portfolio2.png" alt="user" style="zoom: 200%;" />
