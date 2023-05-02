@@ -2,6 +2,7 @@
 
 ## Build with
 
+- Next.js
 - React
 - SASS
 - Framer Motion
