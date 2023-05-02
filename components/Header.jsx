@@ -48,7 +48,7 @@ const Header = () => {
         >
           <div className={style["app__header-badge"]}>
             <p className={style["welcome"]}>WELCOME TO MY WEBSITE</p>
-            <h1>Hi, I'm Ekrem</h1>
+            <h1>Hi, I am Ekrem</h1>
             <h2>Full Stack Developer</h2>
           </div>
 
