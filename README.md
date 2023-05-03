@@ -14,4 +14,4 @@
 
 ## Screenshot
 
-<img src="portfolio2.png" alt="user" style="zoom: 200%;" />
+<img src="portfolio.png" alt="user" style="zoom: 200%;" />

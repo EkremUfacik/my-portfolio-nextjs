@@ -54,17 +54,20 @@ const Header = () => {
 
           <ul className={`${style["app__header-social"]} app__flex`}>
             <li>
-              <a href="https://www.linkedin.com/in/ekrem-ufacik/">
+              <a
+                href="https://www.linkedin.com/in/ekrem-ufacik/"
+                target="_blank"
+              >
                 <FaLinkedinIn />
               </a>
             </li>
             <li>
-              <a href="https://discord.com/channels/@me">
+              <a href="https://discord.com/channels/@me" target="_blank">
                 <FaDiscord />
               </a>
             </li>
             <li>
-              <a href="https://github.com/EkremUfacik">
+              <a href="https://github.com/EkremUfacik" target="_blank">
                 <FaGithub />
               </a>
             </li>

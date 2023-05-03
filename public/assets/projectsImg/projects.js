@@ -21,7 +21,7 @@ const projectImg = [
     name: "Rent Car Fullstack",
     img: rent,
     repo: "https://github.com/EkremUfacik/rent-car-tailwind",
-    live: "https://rent-car-eu.vercel.app/",
+    live: "https://rent-car-eu.netlify.app/",
     tech: ["React", "django", "redux"],
   },
   {
