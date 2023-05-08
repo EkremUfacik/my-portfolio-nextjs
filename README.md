@@ -15,4 +15,4 @@
 
 ## Screenshot
 
-<img src="portfolio.png" alt="user" style="zoom: 200%;" />
+<img src="public/portfolio.png" alt="user" style="zoom: 200%;" />
