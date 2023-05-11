@@ -6,6 +6,7 @@ import django from "../public/assets/skillsImg/django.png";
 import javascript from "../public/assets/skillsImg/javascript.png";
 import { FaLinkedinIn, FaDiscord, FaGithub } from "react-icons/fa";
 import Image from "next/image";
+import bgImage from "../public/assets/profile1.png";
 
 const scaleVariants = {
   whileInView: {
@@ -81,15 +82,19 @@ const Header = () => {
           className={style["app__header-circles"]}
         >
           <div className="app__flex">
-            <Image src={javascript} alt="profile_bg" />
+            <Image src={javascript} alt="javascript" />
           </div>
           <div className="app__flex">
-            <Image src={react} alt="profile_bg" />
+            <Image src={react} alt="react" />
           </div>
           <div className="app__flex">
-            <Image src={django} alt="profile_bg" />
+            <Image src={django} alt="django" />
           </div>
         </motion.div>
+
+        <div className={style["profile-img"]}>
+          <Image src={bgImage} fill />
+        </div>
       </motion.div>
     </>
   );

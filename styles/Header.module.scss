@@ -4,17 +4,17 @@
 
 .app__header {
   position: relative;
-  background: url("../public/assets/profile.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  // background: url("../public/assets/profile1.png");
+  // background-size: contain;
+  // background-position: center;
+  // background-repeat: no-repeat;
   display: flex;
   width: 100%;
   min-height: calc(100vh - 4.2rem);
   line-height: 40px;
   justify-content: center;
   align-items: center;
-  padding: 5rem 0rem;
+  // padding: 5rem 0rem;
 
   &-info {
     flex: 0.75;
@@ -113,8 +113,23 @@
     }
   }
 
+  .profile-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    img {
+      margin: auto;
+      max-width: 750px;
+      height: 100%;
+    }
+  }
+
   @media screen and (max-width: 768px) {
-    background-size: cover;
     color: rgb(255, 255, 255) !important;
     &::after {
       content: "";
