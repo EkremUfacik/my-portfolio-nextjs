@@ -25,7 +25,7 @@ const Navbar = () => {
     >
       <div className={`${style["app__navbar-logo"]} app__flex`}>
         <Link to="home" spy={true} smooth={true} offset={-200} duration={300}>
-          <Image width={50} src={avatar} priority alt="avatar" />
+          <Image width={50} src={avatar} alt="avatar" />
         </Link>
       </div>
       <ul className={`${style["app__navbar-links"]} app__flex`}>
