@@ -17,7 +17,8 @@ const Project = ({ project }) => {
       id="projects"
       className={style["project"]}
       whileInView={{ opacity: [0, 1], x: [-100, 0] }}
-      transition={{ duration: 0.6, delay: 0.3 }}
+      transition={{ duration: 0.6, delay: 0.5, ease: "easeInOut" }}
+      viewport={{ once: true }}
     >
       <div className={style["project-info"]}>
         <Image src={jslogo} alt="info" />

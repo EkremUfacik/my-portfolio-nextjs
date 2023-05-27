@@ -28,8 +28,9 @@ const Certificates = () => {
       <h2 style={{ textAlign: "center", padding: "1rem 0" }}>-Certificates-</h2>
       <motion.div
         className={style["app__certificates-contain"]}
-        whileInView={{ opacity: [0, 1], x: [-200, 0] }}
-        transition={{ duration: 0.4, delay: 0.5 }}
+        whileInView={{ opacity: [0, 1], y: [-100, 0] }}
+        transition={{ duration: 0.8, delay: 0.5 }}
+        viewport={{ once: true }}
       >
         {certificatesList.map((item, index) => (
           <motion.div

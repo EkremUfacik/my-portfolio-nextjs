@@ -12,6 +12,7 @@ const Skills = () => {
         className={`${style["app__skills-logos"]} app__flex`}
         whileInView={{ scale: [0, 1] }}
         transition={{ duration: 1, ease: "easeInOut" }}
+        viewport={{ once: true }}
       >
         {imageObj.map((logo, index) => (
           <motion.div className={style["app__skills-logo"]} key={index}>
