@@ -15,8 +15,16 @@ import tour from "./tour.png";
 import weather from "./weather.png";
 import blog from "./blog-app.png";
 import rent from "./rent.png";
+import ecommerce from "./ecommerce.png";
 
 const projectImg = [
+  {
+    name: "E-Commerce Fullstack",
+    img: ecommerce,
+    repo: "https://github.com/EkremUfacik/react-ecommerce-app",
+    live: "https://eu-ecommerce.netlify.app/",
+    tech: ["React", "django", "redux"],
+  },
   {
     name: "Rent Car Fullstack",
     img: rent,
