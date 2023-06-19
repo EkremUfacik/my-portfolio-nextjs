@@ -1,14 +1,8 @@
 import React from "react";
 import style from "../styles/Projects2.module.scss";
-import reactlogo from "../public/assets/skillsImg/react.png";
-import jslogo from "../public/assets/skillsImg/javascript.png";
-import reduxlogo from "../public/assets/skillsImg/redux.png";
-import tslogo from "../public/assets/skillsImg/typescript.png";
-import djlogo from "../public/assets/skillsImg/django.png";
 import { AiFillEye } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 
 const Project = ({ project }) => {
@@ -21,15 +15,9 @@ const Project = ({ project }) => {
       viewport={{ once: true }}
     >
       <div className={style["project-info"]}>
-        <Image src={jslogo} alt="info" />
-        {project.tech.includes("React") && (
-          <Image src={reactlogo} alt="react" />
-        )}
-        {project.tech.includes("redux") && (
-          <Image src={reduxlogo} alt="redux" />
-        )}
-        {project.tech.includes("ts") && <Image src={tslogo} alt="ts" />}
-        {project.tech.includes("django") && <Image src={djlogo} alt="dj" />}
+        {project.tech.map((tech) => (
+          <img src={`/assets/skillsImg/${tech}.png`} alt={tech} />
+        ))}
       </div>
       <div
         className={style["project-img"]}
@@ -42,12 +30,12 @@ const Project = ({ project }) => {
           onClick={() => window.open(project.live, "_blank")}
         >
           <div className={style["project-icons"]}>
-            <a href={project.live} target="_blank" rel="noreferrer">
+            <Link href={project.live} target="_blank">
               <AiFillEye className={style["icon"]} />
-            </a>
-            <a href={project.repo} target="_blank" rel="noreferrer">
+            </Link>
+            <div onClick={() => window.open(project.repo, "_blank")}>
               <FaGithub className={style["icon"]} />
-            </a>
+            </div>
           </div>
           <div className={style["filter"]} />
         </div>

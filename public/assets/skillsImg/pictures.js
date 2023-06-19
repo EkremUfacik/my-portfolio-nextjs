@@ -11,6 +11,7 @@ import postgre from "./postgresql.png";
 import mui from "./mui.png";
 import github from "./github.png";
 import django from "./django.png";
+// import nextjs from "./nextjs.png";
 import nextjs from "./nextjs.png";
 import bootstrap from "./bootstrap.png";
 
