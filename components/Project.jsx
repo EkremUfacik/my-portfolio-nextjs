@@ -15,8 +15,8 @@ const Project = ({ project }) => {
       viewport={{ once: true }}
     >
       <div className={style["project-info"]}>
-        {project.tech.map((tech) => (
-          <img src={`/assets/skillsImg/${tech}.png`} alt={tech} />
+        {project.tech.map((tech, index) => (
+          <img key={index} src={`/assets/skillsImg/${tech}.png`} alt={tech} />
         ))}
       </div>
       <div
