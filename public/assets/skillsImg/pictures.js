@@ -9,10 +9,9 @@ import redux from "./redux.png";
 import typescript from "./typescript.png";
 import postgre from "./postgresql.png";
 import mui from "./mui.png";
-import github from "./github.png";
 import django from "./django.png";
-// import nextjs from "./nextjs.png";
 import nextjs from "./nextjs.png";
+import nodejs from "./nodejs.png";
 import bootstrap from "./bootstrap.png";
 
 const imageObj = [
@@ -29,7 +28,7 @@ const imageObj = [
   { name: "Bootstrap", img: bootstrap },
   { name: "Next Js", img: nextjs },
   { name: "Tailwind", img: tailwind },
-  { name: "Github", img: github },
+  { name: "Nodejs", img: nodejs },
   { name: "Postgre", img: postgre },
 ];
 

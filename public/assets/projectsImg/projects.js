@@ -17,8 +17,16 @@ import blog from "./blog-app.png";
 import rent from "./rent.png";
 import ecommerce from "./ecommerce.png";
 import pokedex from "./pokedex.png";
+import nextblog from "./nextblog.png";
 
 const projectImg = [
+  {
+    name: "Nextjs Blog",
+    img: nextblog,
+    repo: "https://github.com/EkremUfacik/nextjs-blog",
+    live: "https://nextjs-blog-eu.netlify.app/",
+    tech: ["React", "nextjs", "nodejs"],
+  },
   {
     name: "Pokedex App",
     img: pokedex,
