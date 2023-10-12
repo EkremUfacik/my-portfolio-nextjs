@@ -1,9 +1,11 @@
-import { Inter } from "next/font/google";
+import { Roboto_Slab } from "next/font/google";
 import "@/styles/globals.scss";
 import "react-toastify/dist/ReactToastify.css";
 import Providers from "../providers/Providers";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Roboto_Slab({
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "eU",

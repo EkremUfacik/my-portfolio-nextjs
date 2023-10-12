@@ -1,10 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500&display=swap");
-
-@import "./Variables.module.scss";
 
 :root {
   --background: #edf2f8;
@@ -54,7 +48,7 @@ body::-webkit-scrollbar-thumb:hover {
 .app {
   background-color: var(--background);
   color: var(--text-color);
-  font-family: "Roboto Slab", serif;
+  // font-family: "Roboto Slab", serif;
   font-weight: 500;
   transition: all 0.5s;
 }
