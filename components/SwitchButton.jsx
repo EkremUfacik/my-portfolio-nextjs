@@ -1,11 +1,10 @@
-import React from "react";
 import { MdDarkMode } from "react-icons/md";
 import { BsSun } from "react-icons/bs";
 import style from "../styles/SwitchButton.module.scss";
-import { useThemeContext } from "../context/ThemeProvider";
+import { useTheme } from "next-themes";
 
 const SwitchButton = () => {
-  const { theme, setTheme } = useThemeContext();
+  const { theme, setTheme } = useTheme();
 
   const handleChange = () => {
     setTheme(theme === "light" ? "dark" : "light");

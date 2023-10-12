@@ -1,15 +1,14 @@
-import React, { useState } from "react";
+"use client";
+
+import { useState } from "react";
 import style from "../styles/Certificates.module.scss";
-import certificatesList from "../public/assets/certificates/certificates";
+import certificatesList from "public/assets/certificates/certificates";
 import { motion } from "framer-motion";
-import { useThemeContext } from "../context/ThemeProvider";
 import { FcNext } from "react-icons/fc";
 import { FcPrevious } from "react-icons/fc";
-import Image from "next/image";
 
 const Certificates = () => {
   const [current, setCurrent] = useState(4);
-  const { theme } = useThemeContext();
 
   const handlePrev = () => {
     current === 0
@@ -41,9 +40,7 @@ const Certificates = () => {
                 : style["certificate"]
             }
             style={{ backgroundImage: `url(${item.img.src})` }}
-          >
-            {/* <Image src={item.img} fill /> */}
-          </motion.div>
+          ></motion.div>
         ))}
 
         <div className={`${style["prev"]} app__flex`} onClick={handlePrev}>
@@ -61,7 +58,6 @@ const Certificates = () => {
             style={{
               opacity: current === index ? "0.9" : null,
               scale: current === index ? "1.2" : null,
-              backgroundColor: theme === "dark" ? "white" : "black",
             }}
             key={index}
             onClick={() => setCurrent(index)}

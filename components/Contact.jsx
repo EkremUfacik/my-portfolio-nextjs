@@ -1,6 +1,6 @@
-import style from "../styles/Contact.module.scss";
+"use client";
 
-import React from "react";
+import style from "../styles/Contact.module.scss";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";

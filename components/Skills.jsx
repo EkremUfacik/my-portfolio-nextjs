@@ -1,5 +1,6 @@
-import React from "react";
-import imageObj from "../public/assets/skillsImg/pictures";
+"use client";
+
+import imageObj from "public/assets/skillsImg/pictures";
 import style from "../styles/Skills.module.scss";
 import { motion } from "framer-motion";
 import Image from "next/image";

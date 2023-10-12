@@ -1,4 +1,3 @@
-import React from "react";
 import about from "../styles/About.module.scss";
 
 const About = () => {

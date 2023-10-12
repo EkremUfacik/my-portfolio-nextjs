@@ -6,6 +6,16 @@
 
 @import "./Variables.module.scss";
 
+:root {
+  --background: #edf2f8;
+  --text-color: black;
+}
+
+[data-theme="dark"] {
+  --background: rgba(4, 5, 29, 0.925);
+  --text-color: white;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -42,18 +52,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .app {
-  /* $font-base: "Roboto Slab", serif; */
-  /* $primary-color: #edf2f8; */
-  background-color: $primary-color;
-  font-family: $font-base;
-  font-weight: 500;
-  transition: all 0.5s;
-}
-
-.app-dark {
-  background-color: rgba(3, 4, 20, 0.925);
-  color: white;
-  font-family: $font-base;
+  background-color: var(--background);
+  color: var(--text-color);
+  font-family: "Roboto Slab", serif;
   font-weight: 500;
   transition: all 0.5s;
 }

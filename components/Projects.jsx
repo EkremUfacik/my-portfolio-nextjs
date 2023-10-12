@@ -1,9 +1,11 @@
-import React, { useState } from "react";
-import style from "../styles/Projects2.module.scss";
-import projectsImg from "../public/assets/projectsImg/projects";
+"use client";
+
+import { useState } from "react";
+import style from "../styles/Projects.module.scss";
+import projectsImg from "public/assets/projectsImg/projects";
 import Project from "./Project";
 
-const Projects2 = () => {
+const Projects = () => {
   const [active, setActive] = useState(0);
   const [head, setHead] = useState("All");
   const projectsHead = ["All", "Javascript", "React"];
@@ -43,4 +45,4 @@ const Projects2 = () => {
   );
 };
 
-export default Projects2;
+export default Projects;

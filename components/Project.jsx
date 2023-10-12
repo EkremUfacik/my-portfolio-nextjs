@@ -1,5 +1,4 @@
-import React from "react";
-import style from "../styles/Projects2.module.scss";
+import style from "../styles/Projects.module.scss";
 import { AiFillEye } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
