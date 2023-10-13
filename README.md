@@ -11,7 +11,7 @@
 
 ## Link
 
-- https://ekremufacik.netlify.app/
+- https://ekremufacik.com.tr/
 
 ## Screenshot
 
