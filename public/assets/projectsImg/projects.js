@@ -2,30 +2,27 @@ import cart from "./cart.png";
 import clock from "./clock.png";
 import calculator from "./calculator.png";
 import fireblog from "./fireblog.png";
-// import flag from "./flag.png";
 import memory from "./memory.png";
 import movie from "./movie.png";
 import quiz from "./quiz.png";
 import recipe from "./recipe.png";
 import stock from "./stock.png";
 import sudoku from "./sudoku.png";
-// import task from "./task.png";
 import tour from "./tour.png";
-// import user from "./user.png";
 import weather from "./weather.png";
 import blog from "./blog-app.png";
 import rent from "./rent.png";
 import ecommerce from "./ecommerce.png";
 import pokedex from "./pokedex.png";
-import nextblog from "./nextblog.png";
+import nextEcommerce from "./next-ecommerce.png";
 
 const projectImg = [
   {
-    name: "Nextjs Blog",
-    img: nextblog,
-    repo: "https://github.com/EkremUfacik/nextjs-blog",
-    live: "https://nextjs-blog-eu.netlify.app/",
-    tech: ["React", "nextjs", "nodejs"],
+    name: "Nextjs-Prisma Ecommerce",
+    img: nextEcommerce,
+    repo: "https://github.com/EkremUfacik/nextjs-prisma-ecommerce",
+    live: "https://nextjs-prisma-ecommerce.netlify.app/",
+    tech: ["React", "nextjs"],
   },
   {
     name: "Pokedex App",
@@ -84,13 +81,7 @@ const projectImg = [
     live: "https://fireblog-app-eu.netlify.app/",
     tech: ["React"],
   },
-  // {
-  //   name: "Flag App",
-  //   img: flag,
-  //   repo: "https://github.com/EkremUfacik/flag-app-new",
-  //   live: "https://ekremufacik.github.io/flag-app-new/",
-  //   tech: ["Javascript"],
-  // },
+
   {
     name: "Memory Game",
     img: memory,
@@ -134,13 +125,7 @@ const projectImg = [
     live: "https://eu-sudoku-solver.netlify.app/",
     tech: ["React"],
   },
-  // {
-  //   name: "Task Tracker",
-  //   img: task,
-  //   repo: "https://github.com/EkremUfacik/task-tracker",
-  //   live: "https://task-tracker-eu.netlify.app/",
-  //   tech: ["Javascript"],
-  // },
+
   {
     name: "Tour Places",
     img: tour,
@@ -148,13 +133,7 @@ const projectImg = [
     live: "https://ekremufacik.github.io/tour-places/",
     tech: ["Javascript"],
   },
-  // {
-  //   name: "Random User",
-  //   img: user,
-  //   repo: "https://github.com/EkremUfacik/random-users",
-  //   live: "https://random-users-project.netlify.app/",
-  //   tech: ["Javascript"],
-  // },
+
   {
     name: "Weather App",
     img: weather,
@@ -165,21 +144,3 @@ const projectImg = [
 ];
 
 export default projectImg;
-
-// export default {
-//   cart,
-//   clock,
-//   calculator,
-//   fireblog,
-//   flag,
-//   memory,
-//   movie,
-//   quiz,
-//   recipe,
-//   stock,
-//   sudoku,
-//   task,
-//   tour,
-//   user,
-//   weather,
-// };
