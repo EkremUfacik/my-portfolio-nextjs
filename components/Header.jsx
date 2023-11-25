@@ -106,7 +106,7 @@ const Header = () => {
         </motion.div>
 
         <div className={style["profile-img"]}>
-          <Image src={bgImage} fill />
+          <Image src={bgImage} fill priority />
         </div>
       </motion.div>
     </>
