@@ -8,6 +8,7 @@ import javascript from "public/assets/skillsImg/javascript.png";
 import { FaLinkedinIn, FaDiscord, FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import bgImage from "public/assets/profile1.png";
+import { useEffect, useState } from "react";
 
 const scaleVariants = {
   whileInView: {
@@ -29,6 +30,14 @@ const scaleVariants = {
 };
 
 const Header = () => {
+  // const [mount, setMount] = useState(false);
+
+  // useEffect(() => {
+  //   setMount(true);
+  // }, []);
+
+  // if (!mount) return null;
+
   return (
     <>
       <div id="top" className={style["navfix"]}></div>
@@ -97,7 +106,7 @@ const Header = () => {
         </motion.div>
 
         <div className={style["profile-img"]}>
-          <Image src={bgImage} fill priority />
+          <Image src={bgImage} fill />
         </div>
       </motion.div>
     </>

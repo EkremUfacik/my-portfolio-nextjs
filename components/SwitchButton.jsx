@@ -4,7 +4,7 @@ import style from "../styles/SwitchButton.module.scss";
 import { useTheme } from "next-themes";
 
 const SwitchButton = () => {
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme("light");
 
   const handleChange = () => {
     setTheme(theme === "light" ? "dark" : "light");
@@ -22,13 +22,16 @@ const SwitchButton = () => {
         htmlFor="checkbox"
         className={style["label"]}
         style={{
-          backgroundColor: theme === "light" ? "#5b6770" : "black",
+          backgroundColor: theme === "dark" ? "#5b6770" : "black",
           cursor: "pointer",
         }}
       >
-        <MdDarkMode className={style["dark"]} />
         <BsSun className={style["sun"]} />
-        <div className={style["ball"]}></div>
+        <MdDarkMode className={style["dark"]} />
+        <div
+          className={style["ball"]}
+          style={{ transform: theme == "dark" ? "translateX(14px)" : "" }}
+        ></div>
       </label>
     </div>
   );

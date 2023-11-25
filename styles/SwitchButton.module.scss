@@ -35,8 +35,3 @@
     transition: transform 0.2s linear;
   }
 }
-.checkbox:checked + .label .ball {
-  transform: translateX(14px);
-}
-
-/*  target the elemenent after the label*/

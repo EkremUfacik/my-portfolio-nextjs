@@ -8,6 +8,7 @@ export default function Home() {
     <div className="app">
       <Navbar />
       <Header />
+
       <About />
       <Skills />
       <Projects />
