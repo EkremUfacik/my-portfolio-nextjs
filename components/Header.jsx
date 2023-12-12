@@ -4,11 +4,12 @@ import style from "../styles/Header.module.scss";
 import { motion } from "framer-motion";
 import react from "public/assets/skillsImg/react.png";
 import django from "public/assets/skillsImg/django.png";
+import nextjs from "public/assets/skillsImg/nextjs.png";
 import javascript from "public/assets/skillsImg/javascript.png";
 import { FaLinkedinIn, FaDiscord, FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import bgImage from "public/assets/profile1.png";
-import { useEffect, useState } from "react";
+import { useTheme } from "next-themes";
 
 const scaleVariants = {
   whileInView: {
@@ -30,14 +31,7 @@ const scaleVariants = {
 };
 
 const Header = () => {
-  // const [mount, setMount] = useState(false);
-
-  // useEffect(() => {
-  //   setMount(true);
-  // }, []);
-
-  // if (!mount) return null;
-
+  const { theme } = useTheme();
   return (
     <>
       <div id="top" className={style["navfix"]}></div>
@@ -95,7 +89,7 @@ const Header = () => {
           className={style["app__header-circles"]}
         >
           <div className="app__flex">
-            <Image src={javascript} alt="javascript" />
+            <Image src={nextjs} alt="nextjs" />
           </div>
           <div className="app__flex">
             <Image src={react} alt="react" />
@@ -106,7 +100,19 @@ const Header = () => {
         </motion.div>
 
         <div className={style["profile-img"]}>
-          <Image src={bgImage} fill priority />
+          <Image
+            src={bgImage}
+            // fill
+            priority
+            width={500}
+            height={500}
+            style={{
+              filter:
+                theme === "dark"
+                  ? "brightness(0.8) grayscale(90%)"
+                  : "grayscale(90%)",
+            }}
+          />
         </div>
       </motion.div>
     </>
