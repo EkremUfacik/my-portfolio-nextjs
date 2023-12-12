@@ -15,7 +15,15 @@ const Project = ({ project }) => {
     >
       <div className={style["project-info"]}>
         {project.tech.map((tech, index) => (
-          <img key={index} src={`/assets/skillsImg/${tech}.png`} alt={tech} />
+          <img
+            key={index}
+            src={`/assets/skillsImg/${tech}.png`}
+            alt={tech}
+            style={{
+              backgroundColor: tech === "nextjs" ? "white" : "",
+              borderRadius: tech === "nextjs" ? "50%" : "",
+            }}
+          />
         ))}
       </div>
       <div

@@ -15,6 +15,7 @@ import rent from "./rent.png";
 import ecommerce from "./ecommerce.png";
 import pokedex from "./pokedex.png";
 import nextEcommerce from "./next-ecommerce.png";
+import simon from "./simon.png";
 
 const projectImg = [
   {
@@ -22,7 +23,7 @@ const projectImg = [
     img: nextEcommerce,
     repo: "https://github.com/EkremUfacik/nextjs-prisma-ecommerce",
     live: "https://nextjs-prisma-ecommerce.netlify.app/",
-    tech: ["React", "nextjs"],
+    tech: ["React", "nextjs", "typescript"],
   },
   {
     name: "Pokedex App",
@@ -140,6 +141,13 @@ const projectImg = [
     repo: "https://github.com/EkremUfacik/weather-app",
     live: "https://ekremufacik.github.io/weather-app/",
     tech: ["Javascript"],
+  },
+  {
+    name: "Simon Game",
+    img: simon,
+    repo: "https://github.com/EkremUfacik/simon-game",
+    live: "https://simon-game-eu.netlify.app/",
+    tech: ["nextjs", "typescript"],
   },
 ];
 
