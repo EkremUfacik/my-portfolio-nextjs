@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import react from "public/assets/skillsImg/react.png";
 import django from "public/assets/skillsImg/django.png";
 import nextjs from "public/assets/skillsImg/nextjs.png";
-import javascript from "public/assets/skillsImg/javascript.png";
 import { FaLinkedinIn, FaDiscord, FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import bgImage from "public/assets/profile1.png";

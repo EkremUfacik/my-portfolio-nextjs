@@ -51,6 +51,12 @@
         transition: all 0.5s;
         position: relative;
 
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
         .filter {
           position: absolute;
           top: 0;
