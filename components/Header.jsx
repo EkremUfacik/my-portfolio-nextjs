@@ -7,7 +7,7 @@ import django from "public/assets/skillsImg/django.png";
 import nextjs from "public/assets/skillsImg/nextjs.png";
 import { FaLinkedinIn, FaDiscord, FaGithub } from "react-icons/fa";
 import Image from "next/image";
-import bgImage from "public/assets/profile1.png";
+import profile from "public/assets/profile.png";
 import { useTheme } from "next-themes";
 
 const scaleVariants = {
@@ -100,17 +100,17 @@ const Header = () => {
 
         <div className={style["profile-img"]}>
           <Image
-            src={bgImage}
+            src={profile}
             // fill
             priority
-            width={500}
-            height={500}
-            style={{
-              filter:
-                theme === "dark"
-                  ? "brightness(0.8) grayscale(90%)"
-                  : "grayscale(90%)",
-            }}
+            width={900}
+            height={900}
+            // style={{
+            //   filter:
+            //     theme === "dark"
+            //       ? "brightness(0.8) grayscale(90%)"
+            //       : "grayscale(90%)",
+            // }}
           />
         </div>
       </motion.div>

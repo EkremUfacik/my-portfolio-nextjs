@@ -7,10 +7,11 @@ const About = () => {
         <h2 className="app__head">About me</h2>
         <h3>Full Stack Developer from Turkey</h3>
         <p>
-          I am a graduate of Istanbul University, Faculty of Law. I received
-          Full Stack Development and IT training in a Bootcamp. I have 2 years
-          of Full-Stack experience. I working with React, Nextjs on the
-          Front-End; Nodejs and Django on the Back-End.
+          After one and half years of attorney experience, ITF, Frontend and
+          Backend development training was guided by 2 years of IT experience.
+          Ongoing training and self-development in the field of IT. Worked with
+          React and Next.js on the Front-End; Node.js and Django on the
+          Back-End.
         </p>
       </div>
     </div>
