@@ -59,7 +59,7 @@ const Contact = () => {
         </div>
         <div>
           <h4>Address</h4>
-          <p>Giresun</p>
+          <p>İzmir</p>
         </div>
       </div>
     </div>
