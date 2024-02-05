@@ -1,5 +1,3 @@
-"use client";
-
 import { About, Contact, Header, Projects, Skills } from "@/components";
 import Certificates from "@/components/Certificates";
 import Footer from "@/components/Footer";

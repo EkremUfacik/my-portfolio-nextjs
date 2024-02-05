@@ -8,9 +8,9 @@ import { toast } from "react-toastify";
 const Contact = () => {
   const formRef = useRef();
 
-  const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
-  const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
-  const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+  const PUBLIC_KEY = process.env.NEXT_PUBLIC_PUBLIC_KEY;
+  const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID;
+  const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
 
   const sendEmail = (e) => {
     e.preventDefault();
